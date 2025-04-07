@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-07T18:04:47.544575" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Api" source="C:\Projetos\projeto_api_do_bairro\test-api-bairro\tests\test_api.robot">
+<test id="s1-t1" name="[GET] Verificar API status" line="7">
+<kw name="Criar Sessao API" owner="keywords">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-04-07T18:04:50.859444" level="INFO">Creating Session using : alias=API, url=https://api-bairro.onrender.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>API</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-04-07T18:04:50.858896" elapsed="0.001181"/>
+</kw>
+<status status="PASS" start="2025-04-07T18:04:50.856913" elapsed="0.003493"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-04-07T18:04:50.870146" level="FAIL">MissingSchema: Invalid URL 'API': No scheme supplied. Perhaps you meant https://API?</msg>
+<var>${response}</var>
+<arg>API</arg>
+<doc>Sends a GET request.</doc>
+<status status="FAIL" start="2025-04-07T18:04:50.861155" elapsed="0.154455">MissingSchema: Invalid URL 'API': No scheme supplied. Perhaps you meant https://API?</status>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="NOT RUN" start="2025-04-07T18:04:51.017260" elapsed="0.000120"/>
+</kw>
+<status status="FAIL" start="2025-04-07T18:04:50.854054" elapsed="0.164932">MissingSchema: Invalid URL 'API': No scheme supplied. Perhaps you meant https://API?</status>
+</test>
+<status status="FAIL" start="2025-04-07T18:04:47.551778" elapsed="3.483849"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Api" id="s1" pass="0" fail="1" skip="0">Test Api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

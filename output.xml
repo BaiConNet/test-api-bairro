@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-06T17:53:47.276590" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Api" source="d:\projeto_api_do_bairro\tests\test_api.robot">
+<test id="s1-t1" name="[GET] Verificar API status" line="7">
+<kw name="Criar Sessao">
+<msg time="2025-04-06T17:53:51.345497" level="FAIL">No keyword with name 'Criar Sessao' found.</msg>
+<status status="FAIL" start="2025-04-06T17:53:51.341573" elapsed="0.007607">No keyword with name 'Criar Sessao' found.</status>
+</kw>
+<kw name="GET Deve Retornar 200">
+<status status="NOT RUN" start="2025-04-06T17:53:51.352874" elapsed="0.000533"/>
+</kw>
+<status status="FAIL" start="2025-04-06T17:53:51.332186" elapsed="0.024432">No keyword with name 'Criar Sessao' found.</status>
+</test>
+<status status="FAIL" start="2025-04-06T17:53:47.371489" elapsed="3.991310"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Api" id="s1" pass="0" fail="1" skip="0">Test Api</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-06T17:53:51.108155" level="WARN">Imported resource file 'd:\projeto_api_do_bairro\resources\keywords.robot' is empty.</msg>
+<msg time="2025-04-06T17:53:51.118937" level="ERROR">Error in file 'd:\projeto_api_do_bairro\tests\test_api.robot' on line 4: Processing variable file '../variables/variables.robot' failed: Importing variable file '../variables/variables.robot' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\Weslley\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  D:\projeto_api_do_bairro
+  c:\Users\Weslley\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\Weslley\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Users\Weslley\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Weslley\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Weslley\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Weslley\AppData\Local\Programs\Python\Python313
+  C:\Users\Weslley\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
